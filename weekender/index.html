@@ -113,7 +113,7 @@ function formSubmit()
 email = document.getElementById("email").value;
       zipcode = document.getElementById("zipcode").value;
 
-          var jqxhr = $.get("http://localhost:3000/signup/create",
+          var jqxhr = $.get("http://dev-carryons.herokuapp.com/signup/create",
             { email: email, zipcode: zipcode  },
             function(data,textStatus,request){
 
