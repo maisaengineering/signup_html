@@ -116,11 +116,9 @@ email = document.getElementById("email").value;
           var jqxhr = $.get("http://localhost:3000/signup/create",
             { email: email, zipcode: zipcode  },
             function(data,textStatus,request){
-              console.log(data);
-              $('div#rails-response').append(data);
-              alert(data);
+
             },'script')
-          .done(function(res) { alert(res); })
+          //.done(function(res) { alert(res); })
           .fail(function() { alert("error"); })
 }
 </script>
